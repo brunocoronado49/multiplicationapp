@@ -6,6 +6,6 @@ import { ServerApp } from './presentation/server-app.ts';
 })();
 
 async function main() {
-  const { b: base, l: limit, s: showTable } = yarg;
-  ServerApp.run({ base, limit, showTable });
+  const { b: base, l: limit, s: showTable, n: fileName, d: fileDestination } = yarg;
+  ServerApp.run({ base, limit, showTable, fileName, fileDestination });
 }
